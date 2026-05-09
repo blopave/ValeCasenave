@@ -1,0 +1,157 @@
+{
+  "Loader": {
+    "label": "VC · Vol. 01 · 2026",
+    "status": "Calibrando · Pantone 90-8 C"
+  },
+  "Nav": {
+    "brand": "VC · 2026"
+  },
+  "Hero": {
+    "live": "● Live · Pantone 90-8 C",
+    "humanaeNote": "Catalogada por Humanae · A. Dass",
+    "vol": "VC / 2026 · Vol. 01",
+    "coordsCdmx": "CDMX 19.43°N — 99.13°W",
+    "coordsBsas": "BSAS 34.60°S — 58.38°W",
+    "humanaePantone": "PANTONE® 90-8 C",
+    "humanaeSrc": "Humanae · A. Dass",
+    "humanaeName": "Vale Casenave",
+    "imgAlt": "Vale Casenave catalogada en el proyecto Humanae de Angélica Dass",
+    "valeWord": "Vale",
+    "casePart": "Case",
+    "navePart": "nave",
+    "roleLine1": "Creativa,",
+    "roleLine2": "productora &",
+    "roleEmphasis": "estratega",
+    "metaLine1": "Quince años creando",
+    "metaLine2": "experiencias de impacto.",
+    "metaLine3": "AR ↔ MX desde 2007.",
+    "scroll": "Scroll"
+  },
+  "About": {
+    "label": "About / 01",
+    "kicker": "Quién es",
+    "imgAlt": "Retrato editorial de Vale Casenave",
+    "copyLine1": "Argentina de <em>origen</em>,",
+    "copyLine2": "mexicana de <em>adopción</em>.",
+    "copyLine3": "Conecta ideas con las audiencias que las necesitan.",
+    "bridge0": "↳ AR · Buenos Aires",
+    "bridge1": "↳ MX · Ciudad de México",
+    "bridge2": "↳ <em>19</em> años entre dos países"
+  },
+  "Manifesto": {
+    "progress0": "01 — Pantone",
+    "progress1": "02 — Frecuencia",
+    "progress2": "03 — Cuerpo",
+    "progress3": "04 — Voz",
+    "word0": "Cada <em>persona</em>",
+    "word1": "es un <em>Pantone</em>.",
+    "word2": "Cada idea,",
+    "word3": "una <em>frecuencia</em>."
+  },
+  "Numbers": {
+    "lab": "— En cifras / 2026",
+    "h3Line1": "Catorce años",
+    "h3Emphasis": "en obra",
+    "item0Label0": "Speakers entrenados",
+    "item0Label1": "en LATAM",
+    "item1Label0": "Años creando",
+    "item1Label1": "impacto",
+    "item2Label0": "Eventos TEDx",
+    "item2Label1": "producidos",
+    "item3Label0": "Maratones",
+    "item3Label1": "completadas"
+  },
+  "Cuerpo": {
+    "label": "Capítulo 02 / Cuerpo",
+    "imgAlt": "Vale Casenave corriendo en CDMX al amanecer",
+    "stat0": "<em>×5</em> Maratón",
+    "stat1": "Triatlón",
+    "stat2": "Aprendiendo a nadar",
+    "line1": "Siempre hay nuevas formas",
+    "line2": "de superarse.",
+    "firma": "— El deporte también define <em>quién soy</em>."
+  },
+  "Voz": {
+    "labelChap": "Capítulo",
+    "labelChapNum": "03",
+    "labelText": "/ Voz",
+    "imgAlt": "Vale Casenave en evento TEDx · NEXT",
+    "stat0": "<em>×9</em> TEDx",
+    "stat1": "<em>+400</em> oradores",
+    "stat2": "MX · CO · AR",
+    "stat3": "TED en Español",
+    "quote": "Comunicar la pasión por lo que hacemos es <em>el mejor regalo</em> a las audiencias.",
+    "attr": "— Vale Casenave"
+  },
+  "Empresas": {
+    "utopiaNum": "01",
+    "utopiaKicker": "Empresa de impacto",
+    "utopiaNamePart": "Uto",
+    "utopiaNameEm": "pía",
+    "utopiaMission": "Empresa social. Piensa, crea y ejecuta proyectos que <em>transforman realidades</em> con ONGs, OSCs y sector público.",
+    "utopiaMeta0": "↳ Marketing digital · audiovisuales · eventos",
+    "utopiaMeta1": "↳ Comunidades · ONG · OSC",
+    "utopiaMeta2": "↳ Sinergia, fondeos, RRPP <em>·</em> LATAM",
+    "utopiaCta": "↗ instagram / utopiainspira",
+    "elevateNum": "02",
+    "elevateKicker": "Empresa de ideas",
+    "elevateNamePart": "Ele",
+    "elevateNameEm": "vate",
+    "elevateMission": "Contenidos únicos. Oradores que <em>conectan</em> con lo que le importa a su audiencia.",
+    "elevateMeta0": "↳ TEDx × 9 · MX · CO · AR",
+    "elevateMeta1": "↳ <em>+</em>400 speakers entrenados",
+    "elevateMeta2": "↳ TED en Español <em>·</em> 4 años",
+    "elevateCta": "↗ instagram / elevateideaslatam"
+  },
+  "Publicaciones": {
+    "lab": "— En prensa & medios",
+    "h3": "Sus ideas, <em>publicadas</em>.",
+    "item0Title": "El <em>museo</em> donde los niños juegan a ser científicos",
+    "item0Outlet": "El País · MX",
+    "item0Year": "2025",
+    "item1Title": "Universum: un nuevo <em>espacio</em> para las infancias",
+    "item1Outlet": "Wired · MX",
+    "item1Year": "2025",
+    "item2Title": "Ciencia y juego se dan la <em>mano</em>",
+    "item2Outlet": "Aristegui",
+    "item2Year": "2025",
+    "item3Title": "Cuando el liderazgo se viste de <em>anfitrión</em>",
+    "item3Outlet": "Crónica · GDL",
+    "item3Year": "2025",
+    "item4Title": "Bioferia de Tulum reúne a <em>emprendedores</em>",
+    "item4Outlet": "La Jornada Maya",
+    "item4Year": "2024",
+    "item5Title": "Hay Festival <em>Querétaro</em> · curaduría",
+    "item5Outlet": "Hay Festival",
+    "item5Year": "2024"
+  },
+  "Contacto": {
+    "top0": "06 / Contacto",
+    "top1": "VC · 2026",
+    "h2Part": "Hable",
+    "h2Em": "mos",
+    "linkLinkedIn": "↗ LinkedIn",
+    "linkInstagram": "↗ Instagram",
+    "linkX": "↗ X / Twitter",
+    "linkEmail": "↗ Email"
+  },
+  "Footer": {
+    "left": "VC · 2026",
+    "right": "Pantone 90-8 C · Humanae"
+  },
+  "SideRail": {
+    "hero": "Hero",
+    "about": "About",
+    "manifesto": "Manifesto",
+    "numbers": "Cifras",
+    "cuerpo": "Cuerpo",
+    "voz": "Voz",
+    "empresas": "Empresas",
+    "pubs": "Publicaciones",
+    "contacto": "Contacto"
+  },
+  "Meta": {
+    "title": "Vale Casenave — Creativa, productora & estratega de impacto",
+    "description": "Quince años creando experiencias e iniciativas que conectan ideas con las audiencias que las necesitan. Argentina de origen, mexicana de adopción."
+  }
+}

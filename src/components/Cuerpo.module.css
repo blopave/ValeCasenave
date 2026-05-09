@@ -1,0 +1,141 @@
+.cuerpo {
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  overflow: hidden;
+  background: var(--color-ink);
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  filter: grayscale(1) contrast(1.18) brightness(0.97) sepia(0.06);
+  will-change: transform;
+}
+
+.bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 14, 16, 0.55) 0%,
+    rgba(14, 14, 16, 0) 20%,
+    rgba(14, 14, 16, 0) 50%,
+    rgba(14, 14, 16, 0.4) 75%,
+    rgba(14, 14, 16, 0.92) 100%
+  );
+  z-index: 1;
+}
+
+.label {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  color: var(--color-yellow);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.label::before {
+  content: "";
+  width: 36px;
+  height: 1px;
+  background: currentColor;
+}
+
+.stats {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-paper);
+  text-align: right;
+  line-height: 1.8;
+  z-index: 4;
+}
+.stats span {
+  display: block;
+  opacity: 0.85;
+}
+.stats em {
+  font-style: normal;
+  color: var(--color-yellow);
+}
+
+.title {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 80px;
+  z-index: 3;
+  pointer-events: none;
+  max-width: 1400px;
+}
+
+.line1 {
+  display: block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-variation-settings: "opsz" 144, "SOFT" 100, "wght" 320;
+  font-size: clamp(50px, 6.5vw, 110px);
+  color: var(--color-paper);
+  line-height: 0.94;
+  letter-spacing: -0.025em;
+}
+
+.line2 {
+  display: block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-variation-settings: "opsz" 144, "SOFT" 100, "wght" 340;
+  font-size: clamp(80px, 12vw, 220px);
+  color: var(--color-magenta);
+  line-height: 0.86;
+  letter-spacing: -0.045em;
+  margin-top: 0.02em;
+}
+
+.firma {
+  display: block;
+  margin-top: 28px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-variation-settings: "opsz" 72, "SOFT" 100, "wght" 300;
+  font-size: clamp(16px, 1.7vw, 24px);
+  color: var(--color-paper);
+  opacity: 0.78;
+  line-height: 1.4;
+  letter-spacing: -0.005em;
+  max-width: 54ch;
+}
+.firma em {
+  font-style: italic;
+  color: var(--color-magenta);
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .label,
+  .stats {
+    top: 90px;
+    left: 20px;
+    right: 20px;
+  }
+  .stats {
+    top: 130px;
+  }
+  .title {
+    left: 20px;
+    right: 20px;
+    bottom: 40px;
+  }
+}

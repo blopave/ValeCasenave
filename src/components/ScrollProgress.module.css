@@ -1,0 +1,21 @@
+.track {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 200;
+  pointer-events: none;
+  background: transparent;
+}
+
+.bar {
+  height: 100%;
+  background: var(--color-magenta);
+  transition: width 0.08s linear;
+  will-change: width;
+}
+
+:global(body.loading) .track {
+  display: none;
+}

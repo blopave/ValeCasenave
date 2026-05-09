@@ -1,0 +1,157 @@
+{
+  "Loader": {
+    "label": "VC · Vol. 01 · 2026",
+    "status": "Calibrating · Pantone 90-8 C"
+  },
+  "Nav": {
+    "brand": "VC · 2026"
+  },
+  "Hero": {
+    "live": "● Live · Pantone 90-8 C",
+    "humanaeNote": "Catalogued by Humanae · A. Dass",
+    "vol": "VC / 2026 · Vol. 01",
+    "coordsCdmx": "CDMX 19.43°N — 99.13°W",
+    "coordsBsas": "BSAS 34.60°S — 58.38°W",
+    "humanaePantone": "PANTONE® 90-8 C",
+    "humanaeSrc": "Humanae · A. Dass",
+    "humanaeName": "Vale Casenave",
+    "imgAlt": "Vale Casenave catalogued in Angélica Dass's Humanae project",
+    "valeWord": "Vale",
+    "casePart": "Case",
+    "navePart": "nave",
+    "roleLine1": "Creative,",
+    "roleLine2": "producer &",
+    "roleEmphasis": "strategist",
+    "metaLine1": "Fifteen years building",
+    "metaLine2": "experiences with impact.",
+    "metaLine3": "AR ↔ MX since 2007.",
+    "scroll": "Scroll"
+  },
+  "About": {
+    "label": "About / 01",
+    "kicker": "Who she is",
+    "imgAlt": "Editorial portrait of Vale Casenave",
+    "copyLine1": "Argentine by <em>origin</em>,",
+    "copyLine2": "Mexican by <em>adoption</em>.",
+    "copyLine3": "Connects ideas with the audiences that need them.",
+    "bridge0": "↳ AR · Buenos Aires",
+    "bridge1": "↳ MX · Mexico City",
+    "bridge2": "↳ <em>19</em> years between two countries"
+  },
+  "Manifesto": {
+    "progress0": "01 — Pantone",
+    "progress1": "02 — Frequency",
+    "progress2": "03 — Body",
+    "progress3": "04 — Voice",
+    "word0": "Every <em>person</em>",
+    "word1": "is a <em>Pantone</em>.",
+    "word2": "Every idea,",
+    "word3": "a <em>frequency</em>."
+  },
+  "Numbers": {
+    "lab": "— In numbers / 2026",
+    "h3Line1": "Fourteen years",
+    "h3Emphasis": "in the making",
+    "item0Label0": "Speakers trained",
+    "item0Label1": "across LATAM",
+    "item1Label0": "Years creating",
+    "item1Label1": "impact",
+    "item2Label0": "TEDx events",
+    "item2Label1": "produced",
+    "item3Label0": "Marathons",
+    "item3Label1": "completed"
+  },
+  "Cuerpo": {
+    "label": "Chapter 02 / Body",
+    "imgAlt": "Vale Casenave running in Mexico City at dawn",
+    "stat0": "<em>×5</em> Marathon",
+    "stat1": "Triathlon",
+    "stat2": "Learning to swim",
+    "line1": "There is always",
+    "line2": "another way to surpass.",
+    "firma": "— Sport also defines <em>who I am</em>."
+  },
+  "Voz": {
+    "labelChap": "Chapter",
+    "labelChapNum": "03",
+    "labelText": "/ Voice",
+    "imgAlt": "Vale Casenave at TEDx · NEXT event",
+    "stat0": "<em>×9</em> TEDx",
+    "stat1": "<em>+400</em> speakers",
+    "stat2": "MX · CO · AR",
+    "stat3": "TED en Español",
+    "quote": "Communicating the passion for what we do is <em>the greatest gift</em> we can give to audiences.",
+    "attr": "— Vale Casenave"
+  },
+  "Empresas": {
+    "utopiaNum": "01",
+    "utopiaKicker": "Impact company",
+    "utopiaNamePart": "Uto",
+    "utopiaNameEm": "pía",
+    "utopiaMission": "Social enterprise. Thinks, creates and executes projects that <em>transform realities</em> with NGOs, civil society and the public sector.",
+    "utopiaMeta0": "↳ Digital marketing · audiovisuals · events",
+    "utopiaMeta1": "↳ Communities · NGOs · CSOs",
+    "utopiaMeta2": "↳ Synergy, fundraising, PR <em>·</em> LATAM",
+    "utopiaCta": "↗ instagram / utopiainspira",
+    "elevateNum": "02",
+    "elevateKicker": "Ideas company",
+    "elevateNamePart": "Ele",
+    "elevateNameEm": "vate",
+    "elevateMission": "Distinctive content. Speakers who <em>connect</em> with what matters most to their audience.",
+    "elevateMeta0": "↳ TEDx × 9 · MX · CO · AR",
+    "elevateMeta1": "↳ <em>+</em>400 speakers trained",
+    "elevateMeta2": "↳ TED en Español <em>·</em> 4 years",
+    "elevateCta": "↗ instagram / elevateideaslatam"
+  },
+  "Publicaciones": {
+    "lab": "— In press & media",
+    "h3": "Her ideas, <em>published</em>.",
+    "item0Title": "The <em>museum</em> where children play at being scientists",
+    "item0Outlet": "El País · MX",
+    "item0Year": "2025",
+    "item1Title": "Universum: a new <em>space</em> for childhood",
+    "item1Outlet": "Wired · MX",
+    "item1Year": "2025",
+    "item2Title": "Science and play, <em>hand</em> in hand",
+    "item2Outlet": "Aristegui",
+    "item2Year": "2025",
+    "item3Title": "When leadership wears the role of <em>host</em>",
+    "item3Outlet": "Crónica · GDL",
+    "item3Year": "2025",
+    "item4Title": "Bioferia Tulum brings <em>entrepreneurs</em> together",
+    "item4Outlet": "La Jornada Maya",
+    "item4Year": "2024",
+    "item5Title": "Hay Festival <em>Querétaro</em> · curation",
+    "item5Outlet": "Hay Festival",
+    "item5Year": "2024"
+  },
+  "Contacto": {
+    "top0": "06 / Contact",
+    "top1": "VC · 2026",
+    "h2Part": "Let's",
+    "h2Em": " talk",
+    "linkLinkedIn": "↗ LinkedIn",
+    "linkInstagram": "↗ Instagram",
+    "linkX": "↗ X / Twitter",
+    "linkEmail": "↗ Email"
+  },
+  "Footer": {
+    "left": "VC · 2026",
+    "right": "Pantone 90-8 C · Humanae"
+  },
+  "SideRail": {
+    "hero": "Hero",
+    "about": "About",
+    "manifesto": "Manifesto",
+    "numbers": "Numbers",
+    "cuerpo": "Body",
+    "voz": "Voice",
+    "empresas": "Companies",
+    "pubs": "Press",
+    "contacto": "Contact"
+  },
+  "Meta": {
+    "title": "Vale Casenave — Creative, producer & impact strategist",
+    "description": "Fifteen years creating experiences and initiatives that connect ideas with the audiences that need them. Argentine by origin, Mexican by adoption."
+  }
+}

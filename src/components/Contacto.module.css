@@ -1,0 +1,65 @@
+.contact {
+  background: var(--color-yellow);
+  color: var(--color-ink);
+  min-height: 100vh;
+  padding: 120px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-family: var(--font-display);
+  font-variation-settings: "opsz" 144, "SOFT" 30, "wght" 350;
+  font-size: clamp(120px, 22vw, 420px);
+  line-height: 0.78;
+  letter-spacing: -0.05em;
+  color: var(--color-magenta);
+  margin: 0 auto;
+  text-align: center;
+}
+.h2 em {
+  font-style: italic;
+  font-variation-settings: "opsz" 144, "SOFT" 100, "wght" 300;
+  color: var(--color-ink);
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.links a {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-variation-settings: "opsz" 36, "SOFT" 100, "wght" 300;
+  font-size: clamp(24px, 2.4vw, 36px);
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+}
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 80px 20px;
+  }
+  .h2 {
+    font-size: 24vw;
+  }
+}

@@ -1,0 +1,23 @@
+.cur {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 300;
+  mix-blend-mode: difference;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.big {
+  width: 56px;
+  height: 56px;
+}
+
+@media (max-width: 900px) {
+  .cur {
+    display: none;
+  }
+}
