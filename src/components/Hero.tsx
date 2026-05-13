@@ -55,18 +55,6 @@ export function Hero() {
 
   return (
     <section ref={heroRef} className={styles.hero} id="hero">
-      <div className={styles.top}>
-        <div className={styles.l}>
-          <div>{t("live")}</div>
-          <div style={{ marginTop: 6 }}>{t("humanaeNote")}</div>
-        </div>
-        <div className={styles.c}>{t("vol")}</div>
-        <div className={styles.r}>
-          <div>{t("coordsCdmx")}</div>
-          <div style={{ marginTop: 6 }}>{t("coordsBsas")}</div>
-        </div>
-      </div>
-
       <div className={styles.stage}>
         <div
           className={styles.humanaeCard}

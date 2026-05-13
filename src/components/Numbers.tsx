@@ -14,8 +14,8 @@ type Item = {
 const items: Item[] = [
   { prefix: "+", count: 400, size: "big", labelKey: 0 },
   { prefix: "+", count: 15, size: "m1", labelKey: 1 },
-  { prefix: "×", count: 9, size: "m2", labelKey: 2 },
-  { prefix: "×", count: 5, size: "s", labelKey: 3 },
+  { prefix: "×", count: 13, size: "m2", labelKey: 2 },
+  { prefix: "×", count: 6, size: "s", labelKey: 3 },
 ];
 
 function Counter({ prefix, target }: { prefix: string; target: number }) {

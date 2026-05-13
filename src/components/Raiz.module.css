@@ -1,0 +1,374 @@
+.raiz {
+  position: relative;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  min-height: 330vh;
+  overflow: hidden;
+  padding: 0 0 100px;
+}
+
+/* ── BANDA 1: HEADER (10vh → 30vh) ── */
+.head {
+  position: relative;
+  z-index: 4;
+  padding: 140px 40px 0;
+  max-width: 1500px;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+.label em {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-variation-settings: "opsz" 72, "SOFT" 100, "wght" 300;
+  font-size: 26px;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  opacity: 0.45;
+}
+
+.h3 {
+  font-family: var(--font-display);
+  font-variation-settings: "opsz" 144, "SOFT" 30, "wght" 380;
+  font-size: clamp(56px, 8.4vw, 160px);
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+  margin: 0;
+  max-width: 11ch;
+}
+.h3 em {
+  font-style: italic;
+  font-variation-settings: "opsz" 144, "SOFT" 100, "wght" 300;
+  color: var(--color-magenta);
+}
+
+/* ── BANDA 2: foto 1 derecha + quote A izquierda (58vh → 130vh) ── */
+.f1 {
+  position: absolute;
+  z-index: 3;
+  top: 58vh;
+  right: 5vw;
+  width: clamp(320px, 36vw, 580px);
+  aspect-ratio: 3 / 4;
+  margin: 0;
+  will-change: transform;
+}
+.f1 :global(img) {
+  filter: saturate(1.22) contrast(1.06);
+}
+.f2 :global(img) {
+  filter: saturate(1.18) contrast(1.04);
+}
+.f3 :global(img) {
+  filter: saturate(1.25) contrast(1.06);
+}
+.f4 :global(img) {
+  filter: saturate(1.2) contrast(1.05);
+}
+
+.quoteA {
+  position: absolute;
+  z-index: 4;
+  top: 92vh;
+  left: 6vw;
+  width: min(44%, 560px);
+  font-family: var(--font-display);
+  font-variation-settings: "opsz" 72, "SOFT" 50, "wght" 380;
+  font-size: clamp(22px, 2.8vw, 42px);
+  line-height: 1.16;
+  letter-spacing: -0.018em;
+  color: var(--color-ink);
+  margin: 0;
+  will-change: transform;
+}
+.quoteA em {
+  font-style: italic;
+  font-variation-settings: "opsz" 72, "SOFT" 100, "wght" 320;
+  color: var(--color-magenta);
+}
+.qOpen {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.6em;
+  line-height: 0;
+  color: var(--color-magenta);
+  margin-right: 0.08em;
+  transform: translateY(0.18em);
+}
+
+/* ── BANDA 3: foto 2 izquierda + quote B + meta derecha (148vh → 218vh) ── */
+.f2 {
+  position: absolute;
+  z-index: 3;
+  top: 148vh;
+  left: 5vw;
+  width: clamp(300px, 36vw, 560px);
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  will-change: transform;
+}
+
+.quoteB {
+  position: absolute;
+  z-index: 4;
+  top: 162vh;
+  right: 6vw;
+  width: min(40%, 480px);
+  text-align: right;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-variation-settings: "opsz" 72, "SOFT" 100, "wght" 320;
+  font-size: clamp(22px, 2.6vw, 38px);
+  line-height: 1.18;
+  letter-spacing: -0.014em;
+  color: var(--color-ink);
+  margin: 0;
+  opacity: 0.92;
+  will-change: transform;
+}
+.quoteB em {
+  color: var(--color-magenta);
+  font-variation-settings: "opsz" 72, "SOFT" 100, "wght" 360;
+}
+
+.metaCol {
+  position: absolute;
+  z-index: 4;
+  top: 198vh;
+  right: 7vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 22px;
+  border-left: 2px solid var(--color-magenta);
+  background: rgba(242, 237, 229, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  will-change: transform;
+}
+.metaLab {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-magenta);
+  margin-bottom: 6px;
+}
+.metaLine {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  opacity: 0.82;
+}
+
+/* ── BANDA 4: foto 3 derecha + foto 4 izquierda (230vh → 285vh) ── */
+.f3 {
+  position: absolute;
+  z-index: 3;
+  top: 230vh;
+  right: 8vw;
+  width: clamp(280px, 32vw, 500px);
+  aspect-ratio: 3 / 2;
+  margin: 0;
+  will-change: transform;
+}
+
+.f4 {
+  position: absolute;
+  z-index: 3;
+  top: 252vh;
+  left: 7vw;
+  width: clamp(240px, 26vw, 420px);
+  aspect-ratio: 2 / 3;
+  margin: 0;
+  will-change: transform;
+}
+
+/* bloques de color desplazados detrás de cada foto — más intensos y grandes */
+.f1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-cyan);
+  transform: translate(-32px, 32px);
+  z-index: -1;
+  opacity: 1;
+}
+.f2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-yellow);
+  transform: translate(34px, -26px);
+  z-index: -1;
+  opacity: 1;
+}
+.f3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-magenta);
+  transform: translate(-26px, 32px);
+  z-index: -1;
+  opacity: 0.95;
+}
+.f4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-green);
+  transform: translate(24px, 26px);
+  z-index: -1;
+  opacity: 0.85;
+}
+
+/* tinte de color sutil — pasa magenta sobre f1, cian sobre f2, amarillo sobre f3, verde-cyan sobre f4 */
+.f1::after,
+.f2::after,
+.f3::after,
+.f4::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: soft-light;
+  z-index: 2;
+}
+.f1::after {
+  background: linear-gradient(160deg, rgba(233, 30, 140, 0.55), rgba(0, 182, 217, 0.25));
+}
+.f2::after {
+  background: linear-gradient(200deg, rgba(255, 212, 0, 0.5), rgba(233, 30, 140, 0.3));
+}
+.f3::after {
+  background: linear-gradient(180deg, rgba(0, 182, 217, 0.45), rgba(233, 30, 140, 0.45));
+}
+.f4::after {
+  background: linear-gradient(165deg, rgba(0, 199, 102, 0.45), rgba(0, 182, 217, 0.4));
+}
+
+.cap {
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  opacity: 0.6;
+  line-height: 1.6;
+}
+.cap em {
+  font-style: normal;
+  color: var(--color-magenta);
+  opacity: 1;
+}
+
+/* ── BANDA 5: declaración final (290vh → 320vh) ── */
+.closing {
+  position: absolute;
+  z-index: 4;
+  top: 290vh;
+  left: 6vw;
+  right: 6vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.closingText {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-variation-settings: "opsz" 144, "SOFT" 100, "wght" 320;
+  font-size: clamp(30px, 4.4vw, 74px);
+  line-height: 1.06;
+  letter-spacing: -0.022em;
+  color: var(--color-ink);
+  margin: 0;
+}
+.closingText em {
+  font-style: italic;
+  color: var(--color-magenta);
+  font-variation-settings: "opsz" 144, "SOFT" 100, "wght" 380;
+}
+
+.closingAttr {
+  display: block;
+  margin-top: 28px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-magenta);
+}
+
+/* ── MOBILE — todo en flujo lineal ── */
+@media (max-width: 900px) {
+  .raiz {
+    min-height: auto;
+    padding: 0 0 80px;
+  }
+  .head {
+    padding: 100px 20px 0;
+  }
+  .h3 {
+    font-size: 16vw;
+  }
+  .quoteA,
+  .quoteB,
+  .metaCol,
+  .f1,
+  .f2,
+  .f3,
+  .f4,
+  .closing {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none !important;
+    margin: 60px 20px 0;
+    width: auto;
+    max-width: none;
+  }
+  .f1 {
+    margin: 80px 20px;
+    aspect-ratio: 3 / 4;
+  }
+  .f2 {
+    margin: 80px 20px;
+    aspect-ratio: 4 / 3;
+  }
+  .f3 {
+    margin: 80px 20px;
+    aspect-ratio: 3 / 2;
+  }
+  .f4 {
+    margin: 80px 20px 100px;
+    aspect-ratio: 2 / 3;
+  }
+  .cap {
+    position: relative;
+    bottom: auto;
+    margin-top: 12px;
+  }
+  .quoteB {
+    text-align: left;
+  }
+  .closing {
+    text-align: left;
+    margin-top: 100px;
+  }
+}

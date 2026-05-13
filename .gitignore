@@ -42,3 +42,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# client source assets — no van al sitio
+/imagenesHijos/
+/imagenesTedx/
+/*.pdf

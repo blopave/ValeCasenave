@@ -1,42 +1,44 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import styles from "./Voz.module.css";
+import { richEm } from "@/lib/rich";
+import { useParallaxBg } from "@/lib/useParallax";
 
-const richEm = { em: (chunks: React.ReactNode) => <em>{chunks}</em> };
+const ediciones = [
+  { year: "2024", name: "TEDxPaseoSantaLucía", city: "Monterrey" },
+  { year: "2023", name: "TEDxPaseoSantaLucía", city: "Monterrey" },
+  { year: "2022", name: "TEDxPaseoSantaLucía", city: "Monterrey" },
+  { year: "2022", name: "TEDxLaCondesa", city: "CDMX" },
+  { year: "2020", name: "TEDxPolanco", city: "CDMX" },
+  { year: "2019", name: "TEDxGualeguaychú", city: "AR" },
+  { year: "2018", name: "TEDxIbero", city: "CDMX" },
+  { year: "2017", name: "TEDxCuauhtémoc", city: "CDMX" },
+  { year: "2016", name: "TEDxCuauhtémoc", city: "CDMX" },
+  { year: "2015", name: "TEDxCuauhtémoc Mujeres", city: "CDMX" },
+  { year: "2015", name: "TEDxBogotá", city: "CO" },
+  { year: "2015", name: "TEDxCuauhtémoc", city: "CDMX" },
+  { year: "2014", name: "TEDxCuauhtémoc", city: "CDMX" },
+];
 
 export function Voz() {
   const t = useTranslations("Voz");
   const sectionRef = useRef<HTMLElement>(null);
   const bgRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    const bg = bgRef.current;
-    if (!section || !bg) return;
-    const onScroll = () => {
-      const r = section.getBoundingClientRect();
-      if (r.bottom > 0 && r.top < innerHeight) {
-        const p = r.top / innerHeight;
-        bg.style.transform = `translate3d(0, ${p * 80}px, 0) scale(1.05)`;
-      }
-    };
-    addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-    return () => removeEventListener("scroll", onScroll);
-  }, []);
+  useParallaxBg(sectionRef, bgRef, 200);
 
   return (
     <section ref={sectionRef} className={styles.voz}>
       <div ref={bgRef} className={styles.bg}>
         <Image
-          src="/photos/IMG_3537.JPG"
+          src="/photos/tedx/auditorio-rojo.jpg"
           alt={t("imgAlt")}
           fill
           sizes="100vw"
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", objectPosition: "50% 38%" }}
+          priority={false}
         />
       </div>
       <div className={styles.label}>
@@ -53,6 +55,22 @@ export function Voz() {
         <p className={styles.text}>{t.rich("quote", richEm)}</p>
         <span className={styles.attr}>{t("attr")}</span>
       </blockquote>
+
+      <aside className={styles.ediciones} aria-label={t("edicionesLab")}>
+        <div className={styles.edHead}>
+          <span className={styles.edLab}>{t("edicionesLab")}</span>
+          <span className={styles.edRange}>2014 — 2024</span>
+        </div>
+        <ol className={styles.edList}>
+          {ediciones.map((e, i) => (
+            <li key={i} className={styles.edItem}>
+              <span className={styles.edYear}>{e.year}</span>
+              <span className={styles.edName}>{e.name}</span>
+              <span className={styles.edCity}>{e.city}</span>
+            </li>
+          ))}
+        </ol>
+      </aside>
     </section>
   );
 }

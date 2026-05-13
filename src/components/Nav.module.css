@@ -3,75 +3,91 @@
   inset: 0 0 auto 0;
   z-index: 100;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 24px 32px;
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  mix-blend-mode: difference;
-  color: #fff;
-  font-family: var(--font-mono);
+  padding: 22px 32px;
+  pointer-events: none;
 }
 
-.col {
-  display: flex;
-  gap: 18px;
-  align-items: center;
-}
-
-.section {
-  font-style: italic;
-  text-transform: none;
-  letter-spacing: 0.06em;
-  font-family: var(--font-display);
-  font-variation-settings: "opsz" 36, "SOFT" 100, "wght" 320;
-  font-size: 14px;
-  line-height: 1;
-}
-
-.sep {
-  opacity: 0.4;
-}
-
-@media (max-width: 720px) {
-  .section,
-  .sep {
-    display: none;
-  }
-}
-
-.langs {
+.langSwitch {
+  pointer-events: auto;
   display: inline-flex;
-  gap: 8px;
   align-items: center;
+  gap: 14px;
 }
-.langs a {
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
+
+/* Píldora editorial — fondo amarillo, ink dentro, sombra offset.
+   Yellow no es bg en ninguna sección del sitio, así que el toggle
+   se diferencia siempre del entorno y queda como "sello" flotante. */
+.langToggle {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 9px 18px;
+  border: 1px solid var(--color-ink);
+  border-radius: 999px;
+  background: var(--color-yellow);
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-variation-settings: "opsz" 72, "SOFT" 100, "wght" 320;
+  font-size: 18px;
+  letter-spacing: -0.005em;
+  line-height: 1;
+  box-shadow: 4px 4px 0 0 rgba(14, 14, 16, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
-.langs a:hover {
-  opacity: 1;
+.langToggle:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 0 rgba(14, 14, 16, 0.22);
+}
+
+.langItem {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.langOpt {
+  position: relative;
+  color: var(--color-ink);
+  opacity: 0.42;
+  transition: opacity 0.25s ease, color 0.25s ease;
+  padding-bottom: 3px;
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+  cursor: none;
+}
+.langOpt:hover {
+  opacity: 0.88;
 }
 .active {
   opacity: 1;
+  color: var(--color-magenta);
+  font-variation-settings: "opsz" 72, "SOFT" 100, "wght" 420;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1.5px;
+  background: currentColor;
 }
 
-.dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--color-magenta);
-  animation: pulse 1.6s infinite;
-  display: inline-block;
+.langSep {
+  opacity: 0.35;
+  font-style: italic;
+  color: var(--color-ink);
 }
 
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 0.4;
+@media (max-width: 720px) {
+  .nav {
+    padding: 18px 20px;
   }
-  50% {
-    opacity: 1;
+  .langToggle {
+    font-size: 16px;
+    padding: 7px 14px;
   }
 }

@@ -1,8 +1,30 @@
 .about {
-  padding: 200px 40px;
+  padding: 200px 40px 200px;
   background: var(--color-paper);
   position: relative;
   overflow: hidden;
+}
+
+/* sello tipográfico — pantone code estilo Hero (eco) */
+.pantone {
+  position: absolute;
+  top: 80px;
+  right: 40px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-magenta);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.pantone::before {
+  content: "";
+  width: 36px;
+  height: 1px;
+  background: currentColor;
 }
 
 .grid {
@@ -36,19 +58,34 @@
   opacity: 0.4;
 }
 
+/* ── BLOQUE FOTO ── */
 .photoWrap {
   grid-column: 4 / 9;
   grid-row: 1 / 3;
   position: relative;
   aspect-ratio: 3 / 4;
 }
+
+/* Bloque grande de cyan rotado — el cyan deja de ser marco y se vuelve mancha editorial */
+.photoBlock {
+  position: absolute;
+  inset: -40px -80px -60px 40px;
+  background: var(--color-cyan);
+  z-index: -1;
+  transform: rotate(-2.4deg);
+  opacity: 0.92;
+}
+
+/* El frame original — ahora más sutil porque la mancha grande lleva el peso */
 .photoFrame {
   position: absolute;
   inset: 0;
-  background: var(--color-cyan);
-  transform: translate(28px, 28px);
+  background: var(--color-pantone);
+  transform: translate(20px, 20px);
   z-index: 0;
+  opacity: 0.85;
 }
+
 .photo {
   position: absolute;
   inset: 0;
@@ -57,6 +94,7 @@
   overflow: hidden;
 }
 
+/* ── COPY ── */
 .copy {
   grid-column: 7 / 13;
   grid-row: 2 / 3;
@@ -71,8 +109,6 @@
   position: relative;
   z-index: 3;
 }
-
-/* Editorial chapter rule arriba — gesto de pull-quote, no UI bar */
 .copy::before {
   content: "";
   position: absolute;
@@ -91,10 +127,77 @@
   color: var(--color-ink);
 }
 
+/* ── FICHA CATALOGRÁFICA — el bloque editorial nuevo ── */
+.ficha {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+  margin-top: 80px;
+  padding: 24px 28px 26px;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  border-left: 3px solid var(--color-magenta);
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transform: rotate(-0.6deg);
+}
+
+.fichaLab {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-yellow);
+}
+
+.fichaList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+}
+
+.fichaRow {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 16px;
+  align-items: baseline;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(242, 237, 229, 0.16);
+}
+.fichaRow:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.fichaRow dt {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.fichaRow dd {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  line-height: 1.45;
+  color: var(--color-paper);
+}
+.fichaRow dd em {
+  font-style: normal;
+  color: var(--color-yellow);
+  font-weight: 500;
+}
+
+/* ── BRIDGE + FORMACIÓN (existentes) ── */
 .bridge {
   grid-column: 1 / 5;
   grid-row: 3;
-  margin-top: 80px;
+  margin-top: 60px;
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.18em;
@@ -112,9 +215,46 @@
   opacity: 1;
 }
 
+.formacion {
+  grid-column: 7 / 13;
+  grid-row: 3;
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(14, 14, 16, 0.18);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  line-height: 1.9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+}
+.formacion span {
+  display: block;
+  opacity: 0.78;
+}
+.formacionLab {
+  grid-column: 1 / -1;
+  color: var(--color-cyan);
+  opacity: 1 !important;
+  margin-bottom: 8px;
+}
+.formacion em {
+  font-style: normal;
+  color: var(--color-magenta);
+  opacity: 1;
+}
+
 @media (max-width: 900px) {
   .about {
     padding: 120px 20px;
+  }
+  .pantone {
+    top: 70px;
+    right: 20px;
+    font-size: 10px;
   }
   .grid {
     grid-template-columns: 1fr;
@@ -123,17 +263,34 @@
   .label,
   .photoWrap,
   .copy,
-  .bridge {
+  .ficha,
+  .bridge,
+  .formacion {
     grid-column: 1;
     grid-row: auto;
   }
+  .photoBlock {
+    inset: -16px -24px -28px 16px;
+    transform: rotate(-2deg);
+  }
   .photoFrame {
-    transform: translate(16px, 16px);
+    transform: translate(12px, 12px);
   }
   .copy {
     margin-top: -40px;
   }
+  .ficha {
+    margin-top: 32px;
+    transform: none;
+  }
+  .fichaRow {
+    grid-template-columns: 90px 1fr;
+  }
   .bridge {
     margin-top: 32px;
+  }
+  .formacion {
+    margin-top: 32px;
+    grid-template-columns: 1fr;
   }
 }

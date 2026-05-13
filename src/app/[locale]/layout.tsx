@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Fraunces } from "next/font/google";
+import { Geist, Geist_Mono, Fraunces, Space_Grotesk } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { BASE_URL, urlFor } from "@/lib/site";
 import "../globals.css";
-
-const BASE_URL = "https://valecasenave.com";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,12 +26,16 @@ const fraunces = Fraunces({
   display: "swap",
 });
 
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-blopa",
+  subsets: ["latin"],
+  weight: ["700"],
+  display: "swap",
+});
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
-
-const urlFor = (locale: string) =>
-  locale === routing.defaultLocale ? BASE_URL : `${BASE_URL}/${locale}`;
 
 export async function generateMetadata({
   params,
@@ -43,8 +46,13 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Meta" });
 
   const canonical = urlFor(locale);
+  const hreflangFor: Record<string, string> = {
+    es: "es-AR",
+    en: "en-US",
+    pt: "pt-BR",
+  };
   const languages = Object.fromEntries(
-    routing.locales.map((l) => [l === "es" ? "es-AR" : "en-US", urlFor(l)])
+    routing.locales.map((l) => [hreflangFor[l] ?? l, urlFor(l)])
   );
 
   return {
@@ -61,8 +69,12 @@ export async function generateMetadata({
       url: canonical,
       siteName: "Vale Casenave",
       type: "website",
-      locale: locale === "es" ? "es_AR" : "en_US",
-      alternateLocale: locale === "es" ? "en_US" : "es_AR",
+      locale: locale === "es" ? "es_AR" : locale === "pt" ? "pt_BR" : "en_US",
+      alternateLocale: routing.locales
+        .filter((l) => l !== locale)
+        .map((l) =>
+          l === "es" ? "es_AR" : l === "pt" ? "pt_BR" : "en_US"
+        ),
     },
     twitter: {
       card: "summary_large_image",
@@ -97,14 +109,18 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "Meta" });
-  const heroT = await getTranslations({ locale, namespace: "Hero" });
 
   const personLd = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Vale Casenave",
     alternateName: "Valeria Casenave",
-    jobTitle: heroT("roleEmphasis"),
+    jobTitle:
+      locale === "en"
+        ? "Creative, producer & impact strategist"
+        : locale === "pt"
+        ? "Criativa, produtora & estrategista de impacto"
+        : "Creativa, productora & estratega de impacto",
     description: t("description"),
     url: urlFor(locale),
     image: `${BASE_URL}/photos/humanae.jpg`,
@@ -159,7 +175,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       data-scroll-behavior="smooth"
-      className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} ${spaceGrotesk.variable} antialiased`}
     >
       <body>
         <script
