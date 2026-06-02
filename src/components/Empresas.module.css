@@ -16,12 +16,17 @@
   transition: background 0.5s ease;
 }
 
+/* Díptico de marcas — color story:
+   Utopía = rosa palo (cálido/optimista),
+   Elevate = verde menta (fresco/ascendente).
+   Override local: en el sistema global green y pantone colapsan a rosa,
+   acá necesitamos los dos paneles bien distintos. */
 .utopia {
-  background: var(--color-green);
+  background: var(--color-rosa);
   color: var(--color-ink);
 }
 .elevate {
-  background: var(--color-pantone);
+  background: var(--color-menta);
   color: var(--color-ink);
 }
 

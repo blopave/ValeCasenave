@@ -1,19 +1,24 @@
 .contexto {
-  background: var(--color-paper);
+  /* Wash atmosférico: entrar a Contexto (entre dos secciones oscuras: Cuerpo arriba, Voz abajo)
+     con un fade menta → paper en la franja superior. La paleta nueva *respira* aquí. */
+  background:
+    linear-gradient(180deg, rgba(168, 216, 206, 0.55) 0%, rgba(168, 216, 206, 0) 28%),
+    var(--color-paper);
   color: var(--color-ink);
   padding: 160px 40px 140px;
   position: relative;
   overflow: hidden;
 }
 
-/* fondo: trama tipográfica sutil para que no quede "card-y" */
+/* Fondo: trama tipográfica sutil para que no quede "card-y".
+   Halos en petróleo y menta — paleta nueva en clave susurrada. */
 .contexto::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 80% 12%, rgba(233, 30, 140, 0.05), transparent 40%),
-    radial-gradient(circle at 12% 88%, rgba(0, 182, 217, 0.045), transparent 38%);
+    radial-gradient(circle at 80% 12%, rgba(46, 143, 181, 0.06), transparent 40%),
+    radial-gradient(circle at 12% 88%, rgba(168, 216, 206, 0.06), transparent 38%);
   pointer-events: none;
 }
 
@@ -121,12 +126,14 @@
   color: var(--color-magenta);
   opacity: 0.4;
 }
+/* Segunda figura grande: rosa palo en lugar de menta (que no contrasta sobre cream).
+   Pair editorial petróleo + rosa, dos pantones de la paleta sonando juntos. */
 .big:nth-of-type(2) .fig {
-  color: var(--color-cyan);
+  color: var(--color-rosa);
 }
 .big:nth-of-type(2) .fig .pct {
-  color: var(--color-cyan);
-  opacity: 0.4;
+  color: var(--color-rosa);
+  opacity: 0.55;
 }
 
 .figS {
@@ -225,7 +232,7 @@
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-cyan);
+  color: var(--color-petroleo);
 }
 
 @media (max-width: 900px) {

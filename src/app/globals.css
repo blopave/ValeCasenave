@@ -2,16 +2,29 @@
 
 /* ═══════════════════════════════════════
    Design tokens — VC system
-   CMYK + G + Pantone 90-8 C (Humanae)
+   Paleta editorial: Pantone 7697 / 698 / 102 / 563 C
+   (azul petróleo · rosa palo · amarillo limón · verde menta)
+   sobre paper cream + ink. Los nombres legacy (magenta/yellow/cyan/
+   green/pantone) sobreviven como alias mapeados por rol — el cambio
+   visual es global, el refactor de referencias es cero.
 ═══════════════════════════════════════ */
 @theme {
+  /* Backbone (no se discute) */
   --color-paper: #f2ede5;
   --color-ink: #0e0e10;
-  --color-pantone: #e5b5a0;
-  --color-cyan: #00b6d9;
-  --color-magenta: #e91e8c;
-  --color-yellow: #ffd400;
-  --color-green: #00c766;
+
+  /* Paleta nueva — nombres semánticos */
+  --color-petroleo: #2e8fb5; /* Pantone 7697 C — dominante deep */
+  --color-rosa: #e8a8c4;     /* Pantone 698  C — humano / Humanae */
+  --color-limon: #f5e640;    /* Pantone 102  C — highlight */
+  --color-menta: #a8d8ce;    /* Pantone 563  C — secundario soft */
+
+  /* Aliases legacy mapeados por rol — preservan 200+ referencias */
+  --color-magenta: var(--color-petroleo); /* dominante: wash de Hero, selección, italics */
+  --color-yellow:  var(--color-limon);    /* highlight: cards, números, italics de role */
+  --color-cyan:    var(--color-menta);    /* terciario soft: cards chicos, formación */
+  --color-green:   var(--color-rosa);     /* acento mínimo: G/84 card, Utopía panel */
+  --color-pantone: var(--color-rosa);     /* Humanae card — skin tone editorial */
 
   --font-display: var(--font-fraunces);
   --font-sans: var(--font-geist-sans);
@@ -62,7 +75,7 @@ img {
 }
 
 ::selection {
-  background: var(--color-magenta);
+  background: var(--color-petroleo);
   color: var(--color-paper);
 }
 

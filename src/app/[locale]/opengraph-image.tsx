@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Vale Casenave — Pantone 90-8 C";
+export const alt = "Vale Casenave — Pantone 698 C";
 
 export default async function OpengraphImage({
   params,
@@ -19,7 +19,7 @@ export default async function OpengraphImage({
         style={{
           width: "100%",
           height: "100%",
-          background: "#E91E8C",
+          background: "#2E8FB5",
           display: "flex",
           flexDirection: "column",
           padding: "64px 80px",
@@ -58,14 +58,14 @@ export default async function OpengraphImage({
             style={{
               width: 220,
               height: 290,
-              background: "#E5B5A0",
+              background: "#E8A8C4",
               border: "2px solid #0E0E10",
               display: "flex",
               flexDirection: "column",
               transform: "rotate(-2deg)",
             }}
           >
-            <div style={{ flex: 1, background: "#C19888" }} />
+            <div style={{ flex: 1, background: "#C68FAA" }} />
             <div
               style={{
                 background: "#F2EDE5",
@@ -78,7 +78,7 @@ export default async function OpengraphImage({
               }}
             >
               <span style={{ fontSize: 14, letterSpacing: 3, fontWeight: 600 }}>
-                PANTONE® 90-8 C
+                PANTONE® 698 C
               </span>
               <span style={{ fontSize: 9, letterSpacing: 4, opacity: 0.55 }}>
                 HUMANAE · A. DASS

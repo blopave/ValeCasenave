@@ -92,21 +92,21 @@ export function Hero() {
               data-parallax="green"
               data-depth="0.10"
             >
-              <span className={styles.lab}>G / 84</span>
+              <span className={styles.lab}>R / 698</span>
             </div>
             <div
               className={`${styles.card} ${styles.yellow}`}
               data-parallax="yellow"
               data-depth="0.06"
             >
-              <span className={styles.lab}>Y / 100</span>
+              <span className={styles.lab}>L / 102</span>
             </div>
             <div
               className={`${styles.card} ${styles.cyan}`}
               data-parallax="cyan"
               data-depth="0.18"
             >
-              <span className={styles.lab}>C / 96</span>
+              <span className={styles.lab}>V / 563</span>
             </div>
           </div>
           <h1 className={styles.h1}>

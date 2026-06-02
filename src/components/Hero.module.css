@@ -111,7 +111,7 @@
 }
 .h1 .case em {
   font-style: italic;
-  color: var(--color-magenta);
+  color: var(--color-petroleo);
   font-variation-settings: "opsz" 144, "SOFT" 100, "wght" 320;
   animation: breatheCase 9s ease-in-out infinite;
 }

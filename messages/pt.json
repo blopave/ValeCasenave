@@ -1,18 +1,18 @@
 {
   "Loader": {
     "label": "VC · Vol. 01 · 2026",
-    "status": "Calibrando · Pantone 90-8 C"
+    "status": "Calibrando · Pantone 698 C"
   },
   "Nav": {
     "brand": "VC · 2026"
   },
   "Hero": {
-    "live": "● Live · Pantone 90-8 C",
+    "live": "● Live · Pantone 698 C",
     "humanaeNote": "Catalogada por Humanae · A. Dass",
     "vol": "VC / 2026 · Vol. 01",
     "coordsCdmx": "CDMX 19.43°N — 99.13°W",
     "coordsBsas": "BSAS 34.60°S — 58.38°W",
-    "humanaePantone": "PANTONE® 90-8 C",
+    "humanaePantone": "PANTONE® 698 C",
     "humanaeSrc": "Humanae · A. Dass",
     "humanaeName": "Vale Casenave",
     "imgAlt": "Vale Casenave catalogada no projeto Humanae de Angélica Dass",
@@ -230,7 +230,7 @@
     "clocksAria": "Hora atual em CDMX e no seu fuso horário",
     "linkLinkedIn": "↗ LinkedIn",
     "linkInstagram": "↗ Instagram",
-    "seal": "Pantone 90-8 C · Humanae · VC / 2026"
+    "seal": "Pantone 698 C · Humanae · VC / 2026"
   },
   "Credit": {
     "aria": "Site desenhado e desenvolvido por blo pa/",
@@ -241,7 +241,7 @@
   },
   "Footer": {
     "left": "VC · 2026",
-    "right": "Pantone 90-8 C · Humanae"
+    "right": "Pantone 698 C · Humanae"
   },
   "SideRail": {
     "hero": "Hero",

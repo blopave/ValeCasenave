@@ -1,13 +1,14 @@
 import { getTranslations } from "next-intl/server";
 import styles from "./Footer.module.css";
 
+// Sello pantone: los 4 colores de la paleta + paper + ink
 const swatches = [
-  "var(--color-cyan)",
-  "var(--color-magenta)",
-  "var(--color-yellow)",
-  "var(--color-green)",
-  "var(--color-pantone)",
+  "var(--color-petroleo)",
+  "var(--color-rosa)",
+  "var(--color-limon)",
+  "var(--color-menta)",
   "var(--color-paper)",
+  "var(--color-ink)",
 ];
 
 export async function Footer() {

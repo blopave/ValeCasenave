@@ -5,12 +5,16 @@ import { useTranslations } from "next-intl";
 import styles from "./Manifesto.module.css";
 import { richEm } from "@/lib/rich";
 
+// Progresión cromática del Manifesto — 5 estadios que viajan
+// desde paper, atraviesan ink, y emergen al wash petróleo final.
+// Los ems se alternan petróleo/limón para que el accent siempre
+// rompa el bg con suficiente contraste.
 const palette = [
-  { bg: "#F2EDE5", fg: "#0E0E10", em: "#E91E8C" },
-  { bg: "#0E0E10", fg: "#F2EDE5", em: "#FFD400" },
-  { bg: "#00B6D9", fg: "#0E0E10", em: "#E91E8C" },
-  { bg: "#FFD400", fg: "#0E0E10", em: "#00C766" },
-  { bg: "#E91E8C", fg: "#F2EDE5", em: "#00B6D9" },
+  { bg: "#F2EDE5", fg: "#0E0E10", em: "#2E8FB5" }, // paper → petróleo
+  { bg: "#0E0E10", fg: "#F2EDE5", em: "#F5E640" }, // ink → limón
+  { bg: "#A8D8CE", fg: "#0E0E10", em: "#2E8FB5" }, // menta → petróleo
+  { bg: "#F5E640", fg: "#0E0E10", em: "#2E8FB5" }, // limón → petróleo (rosa sobre limón se lava, petróleo pega)
+  { bg: "#2E8FB5", fg: "#F2EDE5", em: "#F5E640" }, // petróleo → limón
 ];
 
 const lerp = (a: number, b: number, k: number) => Math.round(a + (b - a) * k);

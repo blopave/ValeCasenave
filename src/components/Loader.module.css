@@ -32,20 +32,22 @@
   transform: translateX(0);
 }
 
+/* Las 4 barras del loader = las 4 Pantones de la paleta nueva,
+   barridas en cascada como prueba de impresión. */
 .c {
-  background: var(--color-cyan);
+  background: var(--color-petroleo);
   transition-delay: 0.05s;
 }
 .m {
-  background: var(--color-magenta);
+  background: var(--color-rosa);
   transition-delay: 0.13s;
 }
 .y {
-  background: var(--color-yellow);
+  background: var(--color-limon);
   transition-delay: 0.21s;
 }
 .k {
-  background: var(--color-ink);
+  background: var(--color-menta);
   transition-delay: 0.29s;
 }
 

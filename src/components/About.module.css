@@ -116,7 +116,7 @@
   top: 24px;
   width: 56px;
   height: 1px;
-  background: var(--color-cyan);
+  background: var(--color-petroleo);
 }
 .copy em {
   font-style: italic;
@@ -235,9 +235,10 @@
   display: block;
   opacity: 0.78;
 }
+/* Lab sobre paper: menta no contrasta sobre cream → uso petróleo */
 .formacionLab {
   grid-column: 1 / -1;
-  color: var(--color-cyan);
+  color: var(--color-petroleo);
   opacity: 1 !important;
   margin-bottom: 8px;
 }
