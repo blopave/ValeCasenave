@@ -25,13 +25,27 @@ export function Contexto() {
         <article className={`${styles.item} ${styles.big}`} data-reveal>
           <div className={styles.fig}>91<span className={styles.pct}>%</span></div>
           <p className={styles.cap}>{t.rich("stat0Cap", richEm)}</p>
-          <span className={styles.src}>{t("stat0Src")}</span>
+          <a
+            className={styles.src}
+            href={t("stat0Url")}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("stat0Src")} <span aria-hidden>↗</span>
+          </a>
         </article>
 
         <article className={`${styles.item} ${styles.big}`} data-reveal>
           <div className={styles.fig}>80<span className={styles.pct}>%</span></div>
           <p className={styles.cap}>{t.rich("stat1Cap", richEm)}</p>
-          <span className={styles.src}>{t("stat1Src")}</span>
+          <a
+            className={styles.src}
+            href={t("stat1Url")}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("stat1Src")} <span aria-hidden>↗</span>
+          </a>
         </article>
 
         <article className={styles.itemS} data-reveal>
@@ -53,7 +67,14 @@ export function Contexto() {
       <blockquote className={styles.quote} data-reveal>
         <span className={styles.mark}>&ldquo;</span>
         <p className={styles.qText}>{t.rich("quote", richEm)}</p>
-        <span className={styles.qAttr}>{t("quoteAttr")}</span>
+        <a
+          className={styles.qAttr}
+          href={t("quoteUrl")}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("quoteAttr")} <span aria-hidden>↗</span>
+        </a>
       </blockquote>
     </section>
   );

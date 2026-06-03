@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import styles from "./Numbers.module.css";
+import { richTedx } from "@/lib/rich";
 
 type Item = {
   prefix: string;
@@ -80,9 +81,15 @@ export function Numbers() {
           >
             <Counter prefix={item.prefix} target={item.count} />
             <div className={styles.l}>
-              {t(`item${item.labelKey}Label0` as `item${0 | 1 | 2 | 3}Label0`)}
+              {t.rich(
+                `item${item.labelKey}Label0` as `item${0 | 1 | 2 | 3}Label0`,
+                richTedx
+              )}
               <br />
-              {t(`item${item.labelKey}Label1` as `item${0 | 1 | 2 | 3}Label1`)}
+              {t.rich(
+                `item${item.labelKey}Label1` as `item${0 | 1 | 2 | 3}Label1`,
+                richTedx
+              )}
             </div>
           </div>
         ))}

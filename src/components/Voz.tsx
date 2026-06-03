@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import styles from "./Voz.module.css";
-import { richEm } from "@/lib/rich";
+import { richEm, richEmTedx } from "@/lib/rich";
 import { useParallaxBg } from "@/lib/useParallax";
 
 const ediciones = [
@@ -45,7 +45,7 @@ export function Voz() {
         {t("labelChap")} <em>{t("labelChapNum")}</em> {t("labelText")}
       </div>
       <div className={styles.stats}>
-        <span>{t.rich("stat0", richEm)}</span>
+        <span>{t.rich("stat0", richEmTedx)}</span>
         <span>{t.rich("stat1", richEm)}</span>
         <span>{t("stat2")}</span>
         <span>{t("stat3")}</span>

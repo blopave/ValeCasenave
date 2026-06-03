@@ -72,9 +72,7 @@ export function Hero() {
             />
           </div>
           <div className={styles.lb}>
-            <span className={styles.pn}>{t("humanaePantone")}</span>
             <span className={styles.src}>{t("humanaeSrc")}</span>
-            <span className={styles.nm}>{t("humanaeName")}</span>
           </div>
         </div>
 

@@ -90,6 +90,7 @@
   gap: 10px;
   padding-top: 22px;
   border-top: 1px solid rgba(14, 14, 16, 0.18);
+  align-self: start;
 }
 
 .big {
@@ -191,6 +192,12 @@
   color: var(--color-ink);
   opacity: 0.45;
   margin-top: 4px;
+  text-decoration: none;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+a.src:hover {
+  opacity: 1;
+  color: var(--color-magenta);
 }
 
 .quote {
@@ -233,6 +240,11 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-petroleo);
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+a.qAttr:hover {
+  color: var(--color-magenta);
 }
 
 @media (max-width: 900px) {
