@@ -27,7 +27,7 @@ export function Raiz() {
       {/* Capa 1 — frase ancla "atraviesa todo" */}
       <p className={styles.quoteA} data-reveal data-speed="0.55">
         <span className={styles.qOpen}>&ldquo;</span>
-        {t.rich("quoteA", richEm)}
+        {t.rich("quoteA", richEm)}&rdquo;
       </p>
 
       {/* Foto 1 — caminando de espaldas, grande, derecha */}

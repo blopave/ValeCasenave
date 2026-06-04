@@ -45,7 +45,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
-  row-gap: 60px;
+  row-gap: 28px;
   align-items: start;
 }
 
@@ -120,8 +120,6 @@
 .s {
   grid-column: 1 / 6;
   grid-row: 3;
-  padding-top: 30px;
-  border-top: 1px solid rgba(242, 237, 229, 0.25);
 }
 .s .n {
   font-size: clamp(80px, 9vw, 150px);

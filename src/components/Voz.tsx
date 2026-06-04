@@ -52,7 +52,7 @@ export function Voz() {
       </div>
       <blockquote className={styles.quote}>
         <span className={styles.mark}>&ldquo;</span>
-        <p className={styles.text}>{t.rich("quote", richEm)}</p>
+        <p className={styles.text}>{t.rich("quote", richEm)}&rdquo;</p>
         <span className={styles.attr}>{t("attr")}</span>
       </blockquote>
 

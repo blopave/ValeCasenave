@@ -66,7 +66,7 @@ export function Contexto() {
 
       <blockquote className={styles.quote} data-reveal>
         <span className={styles.mark}>&ldquo;</span>
-        <p className={styles.qText}>{t.rich("quote", richEm)}</p>
+        <p className={styles.qText}>{t.rich("quote", richEm)}&rdquo;</p>
         <a
           className={styles.qAttr}
           href={t("quoteUrl")}

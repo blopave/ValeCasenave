@@ -71,9 +71,6 @@ export function Hero() {
               style={{ objectFit: "cover" }}
             />
           </div>
-          <div className={styles.lb}>
-            <span className={styles.src}>{t("humanaeSrc")}</span>
-          </div>
         </div>
 
         <div className={styles.nameblock}>

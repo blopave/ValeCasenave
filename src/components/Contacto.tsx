@@ -82,7 +82,7 @@ export function Contacto() {
           <span className={styles.qMark} aria-hidden>
             &ldquo;
           </span>
-          <p className={styles.qText}>{t.rich("quote", richEm)}</p>
+          <p className={styles.qText}>{t.rich("quote", richEm)}&rdquo;</p>
           <span className={styles.qAttr}>{t("quoteAttr")}</span>
         </aside>
       </div>

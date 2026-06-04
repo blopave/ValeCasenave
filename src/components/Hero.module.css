@@ -42,46 +42,8 @@
 }
 .humanaeCard .ph {
   position: absolute;
-  inset: 0 0 28% 0;
+  inset: 0;
   overflow: hidden;
-}
-.humanaeCard .lb {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 28%;
-  background: var(--color-paper);
-  border-top: 1px solid var(--color-ink);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 16px;
-  gap: 2px;
-}
-.pn {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  letter-spacing: 0.16em;
-  font-weight: 500;
-  color: var(--color-ink);
-}
-.src {
-  font-family: var(--font-mono);
-  font-size: 8px;
-  letter-spacing: 0.22em;
-  opacity: 0.55;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-.nm {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-variation-settings: "opsz" 36, "SOFT" 100, "wght" 300;
-  font-size: 18px;
-  letter-spacing: -0.01em;
-  color: var(--color-ink);
-  margin-top: 4px;
 }
 
 /* h1 + cards */
@@ -275,15 +237,6 @@
   .humanaeCard {
     width: 160px;
     align-self: flex-end;
-  }
-  .pn {
-    font-size: 11px;
-  }
-  .src {
-    font-size: 7px;
-  }
-  .nm {
-    font-size: 14px;
   }
   .bot {
     grid-template-columns: 1fr 1fr;
