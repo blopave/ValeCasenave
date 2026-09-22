@@ -94,7 +94,9 @@ export function Contacto() {
           className={styles.email}
           aria-label={t("emailAria")}
         >
-          {EMAIL}
+          {/* corte limpio después de la @ en pantallas angostas (antes break-all partía "gmail.co / m") */}
+          {EMAIL.split("@")[0]}@<wbr />
+          {EMAIL.split("@")[1]}
         </a>
       </div>
 
